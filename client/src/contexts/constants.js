@@ -3,7 +3,7 @@ export const LOCAL_TOKEN_STORAGE = "MTEORANN";
 export const apiUrl =
   process.env.NODE_ENV !== "production"
     ? "http://localhost:5000/api"
-    : "someDeployUrl";
+    : "https://tanotion.herokuapp.com/api";
 export const SET_AUTH = "SET_AUTH";
 export const POSTS_LOADED_SUCCESS = "POSTS_LOADED_SUCCESS";
 export const POSTS_LOADED_FAILED = "POSTS_LOADED_FAILED";
