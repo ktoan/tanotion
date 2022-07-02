@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import playIcon from "../../assets/play-btn.svg";
+import playIcon from "../../assets/link.svg";
 import editIcon from "../../assets/pencil.svg";
 import deleteIcon from "../../assets/trash.svg";
 import Button from "react-bootstrap/esm/Button";
