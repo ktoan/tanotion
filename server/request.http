@@ -1,0 +1,44 @@
+// GET http://localhost:5000/api/auth
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "toannguyen",
+  "password": "123456" 
+}
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "toannguyen2",
+  "password": "123456" 
+}
+###
+POST http://localhost:5000/api/post/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI5MTJhY2Q2ZTFmMmVmZmRiZmI5MzciLCJpYXQiOjE2NTYzMDMxODl9.OWUjOoQ6aH5jYLnZjMCOawNu9X8qUbOUaS4FNjVCn8E
+
+{
+  "title": "Learning PHP/Laravel",
+  "description": "FullStack website Save Our Planet",
+  "url": "facebook.com/khanhtoan63",
+  "status": "LEARNED"
+}
+###
+GET http://localhost:5000/api/post/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI5MTFjY2FjNzJiMTc2ZmY3MTQyYTAiLCJpYXQiOjE2NTYzMTgyNTN9.vGw6PV9r6WzHJsBLMgmTmQM1WKPHiR8v6fMhzMft57w
+###
+PUT http://localhost:5000/api/post/62b92be3b70fe0182abd243
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI5MTFjY2FjNzJiMTc2ZmY3MTQyYTAiLCJpYXQiOjE2NTYzMTgyNTN9.vGw6PV9r6WzHJsBLMgmTmQM1WKPHiR8v6fMhzMft57w
+Content-Type: application/json
+
+{
+  "title": "React Learning Updated"
+}
+
+###
+DELETE http://localhost:5000/api/post/62b92be3b70fe0182abd2434
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmI5MTFjY2FjNzJiMTc2ZmY3MTQyYTAiLCJpYXQiOjE2NTYzMTgyNTN9.vGw6PV9r6WzHJsBLMgmTmQM1WKPHiR8v6fMhzMft57w
+Content-Type: application/json
